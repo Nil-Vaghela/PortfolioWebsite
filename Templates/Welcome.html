@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+        .parallax {
+            background-image: url("{{ url_for('static', filename='images/background.jpg') }}");
+        }
+    </style>
+<body>
+    <style>
+        .parallax {
+            background-image: url("{{ url_for('static', filename='images/background.jpg') }}");
+        }
+    </style>
+    <div class="parallax"></div>
+
+    
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image-container">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Image" class="profile-image">
+            </div>
+            <h1 class="profile-name">Nilrajsinh Vaghela</h1>
+            <p class="opportunity-statement">Sophomore Computer Science student with a passion for Python, eager to contribute and collaborate on innovative projects.</p>
+            <p class="profile-tagline"></p> <!-- Tagline will be filled by JavaScript -->
+        </div>
+        <div class=" container">
+            <div class="profile-details">
+                <a href="https://github.com/Nil-Vaghela" target="_blank" class="detail-link"><i class="fab fa-github"></i>Nil-Vaghela</a>
+                <span class="divider">|</span>
+                <a href="https://www.linkedin.com/in/nilrajsinh19/" target="_blank" class="detail-link"><i class="fab fa-linkedin"></i>nilrajsinh19</a>
+                <span class="divider">|</span>
+                <a href="mailto:Nilrajsinh9@icloud.com" class="detail-link"><i class="fas fa-envelope"></i>Nilrajsinh9@icloud.com</a>
+                <span class="divider">|</span>
+                <span class="detail-text"><i class="fas fa-phone-alt"></i> Phone: +617-755-6634</span>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span>Python</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Flutter</span>
+                    <span>Flask</span>
+                    <span>AWS</span>
+                    <span>GIT</span>
+                    <span>Jira</span>
+                    <span>Rest API</span>
+                    <span>Object Oriented Programming</span>
+                    <span>Agile</span>
+                    <span>MVVM</span>
+                </div>
+                <!-- Content goes here -->
+            </div>
+        </div>
+        
+        
+        
+        <!-- Placeholder Sections -->
+        <div class="section projects">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <div class="project-images">
+                    <!-- Sample images; replace with your own -->
+                    <img src="{{ url_for('static', filename='images/project1-1.png') }}" alt="Project Image 1 ">
+                    <img src="{{ url_for('static', filename='images/project1-2.png') }}" alt="Project Image 2">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Student Employe Managment</h3>
+                    <p class="project-description">Identifying the need for a more efficient and accurate method to manage student employee schedules and hours at Georgia State University's Panther Dining Chick-fil-A outlet, I developed a comprehensive Student Employee Management System. This digital solution was designed to replace the outdated pen-and-paper method, offering a streamlined approach to tracking time-related activities of student workers.</p>
+
+                    <p class="project-description">
+                        Upon unveiling the effectiveness and the benefits of this system, it was swiftly implemented by the GSU Panther Dining department. This initiative has dramatically enhanced the operational efficiency of Chick-fil-A’s campus outlet by providing a seamless transition from a manual, labor-intensive process to a sophisticated, automated system. The adoption of the software reflects a step forward in modernizing the workplace and exemplifies the positive change driven by student-led innovation.
+                    </p>
+                    <div class="experience-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>AWS</span>
+                        <span>Unit Testing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-images">
+                    <!-- Sample images; replace with your own -->
+                    <img src="{{ url_for('static', filename='images/project2-1.png') }}" alt="Project Image 1 ">
+                    <img src="{{ url_for('static', filename='images/project2-2.png') }}" alt="Project Image 2">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Employe Rating System</h3>
+                    <p class="project-description">I have developed an innovative Employee Rating System specifically tailored for the operational framework of Chick-fil-A outlets on campus. This system was meticulously designed to facilitate the daily evaluation of student employees by their respective student leaders.</p>
+                    <p class="project-description">The implementation of this system has not only streamlined the evaluation process but has also enhanced employee engagement and satisfaction. By providing transparent and consistent feedback, the Employee Rating System has fostered a positive work environment and has become an instrumental part of the operational excellence at Georgia State University's Chick-fil-A dining services.</p>
+
+                    <div class="experience-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>AWS</span>
+                        <span>SMTP</span>
+                        <span>Animation</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Content goes here -->
+        </div>
+        <div class="section experience">
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <h3>Technical Assistant - Georgia State University <span>April 2023 to Present</span></h3>
+                <h4>Panthor Dining (Chick-fil-A)</h4>
+                <ul>
+                    <li>Implemented an employee management system for Georgia State University's Panther Dining Department, enhancing student attendance tracking.</li>
+                    <li>Managed daily sales and field operations, focusing on strategic revenue growth.</li>
+                    <li>Led mobile app optimizations, resulting in a 48% increase in revenue from app-based transactions.</li>
+                    <li>Technologies used: Python, Flask, NumPy, Pandas, HTML, CSS, AWS, Unit Testing.</li>
+                </ul>
+                <div class="experience-tech">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>AWS</span>
+                    <span>Unit Testing</span>
+                </div>
+            </div>
+            <div class="experience-card">
+                <h3>Student Assistant - Georgia State University <span>Sept 2022 to March 2023</span></h3>
+                <h4>Panthor Dining (Chick-fil-A)</h4>
+                <ul>
+                    <li>Oversaw daily field activities as a student leader.</li>
+                    <li>Managed a team of 12 student employees.</li>
+                    <li>Skills developed: Leadership, Customer Management, Critical Thinking.</li>
+                </ul>
+                <div class="experience-tech">
+                    <span>Leadership</span>
+                    <span>Cutomer Managment</span>
+                    <span>Critical Thinking</span>
+                </div>
+            </div>
+            <div class="experience-card">
+                <h3>Flutter Developer & Team Leader - Ebrious PVT LMTD <span>July 2020 to April 2022</span></h3>
+                <ul>
+                    <li>Oversaw the Flutter team, successfully delivering over 12 projects such as Stockbook, property listing, and appointment booking, among others.</li>
+                    <li>Assisted the Python team with API design.</li>
+                    <li>Coordinated daily with an average of 6 personnel to meet and exceed client expectations.</li>
+                    <li>Technologies used: Flutter, API, Postman, GIT, Adobe Cloud, Web Hosting.</li>
+                </ul>
+                <div class="experience-tech">
+                    <span>Flutter</span>
+                    <span>API</span>
+                    <span>POSTMAN</span>
+                    <span>GIT</span>
+                    <span>ADOBE</span>
+                    <span>Cloud Hosting</span>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- <div class="section contact">
+            <h2>Contact</h2>
+        </div> -->
+    </div>
+    <script>
+        const tagline = document.querySelector('.profile-tagline');
+        const texts = ["Aspiring Developer", "Creator", "Tech Enthusiast"];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+
+        (function type() {
+            if (count === texts.length) {
+                count = 0;
+            }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+            tagline.textContent = letter;
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0;
+                setTimeout(type, 2000);
+            } else {
+                setTimeout(type, 200);
+            }
+        }());
+        window.addEventListener("scroll", function() {
+    var offset = window.pageYOffset;
+    document.querySelector('.parallax').style.backgroundPositionY = offset * 0.7 + "px"; // 0.7 determines the speed, adjust as needed
+});
+
+    </script>
+    
+</body>
+</html>
